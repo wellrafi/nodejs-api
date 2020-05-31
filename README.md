@@ -3,8 +3,8 @@
 ## API LIST
 | METHOD | ENDPOINT | BODY |
 |--------|----------|------|
-| GET | /tag | none |
-| GET | /tag/:tag-slug | none |
-| POST | /tag | {name: string & unique} |
-| PUT | /tag/:tag-slug | {name: string & unique} |
-| DELETE | /tag/:tag-slug | none |
+| GET | /category | none |
+| GET | /category/:category-slug | none |
+| POST | /category | {name: string & unique} |
+| PUT | /category/:category-slug | {name: string & unique} |
+| DELETE | /category/:category-slug | none |

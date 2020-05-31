@@ -8,9 +8,11 @@ mongoose.connect('mongodb://localhost:27017/nodejs-api', {
 
 let schema = new Schema({
 	name: String,
-	slug: String
+	slug: String,
+	active: Boolean
 });
 
 let model = mongoose.model('category', schema);
+
 
 module.exports = model;

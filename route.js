@@ -1,10 +1,10 @@
 var route = require('express').Router();
-var postRouter = require('./routes/post');
+var inventoryRouter = require('./routes/inventory');
 var categoryRouter = require('./routes/category');
-var tagRouter = require('./routes/tag');
+var supplierRouter = require('./routes/supplier');
 
-route.use('/post', postRouter);
-route.use('/category', categoryRouter);
-route.use('/tag', tagRouter);
+route.use('/inventory', inventoryRouter);
+route.use('/kategori', categoryRouter);
+route.use('/supplier', supplierRouter);
 
 module.exports = route;

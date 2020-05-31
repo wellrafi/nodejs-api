@@ -12,7 +12,7 @@ var app = express();
 
 app.use(compression());
 app.use(cors());
-app.use(multer().none())
+// app.use(multer().none())
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -40,9 +40,10 @@ app.use(function (err, req, res, next) {
 	res.status(err.status || 500);
 	res.json({
 		message: err.message,
-    code: err.status || 500,
+		code: err.status || 500,
 		success: 0,
 	});
+	console.log(err);
 });
 
 module.exports = app;

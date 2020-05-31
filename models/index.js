@@ -1,9 +1,9 @@
+const supplier = require('./supplier');
 const category = require('./category');
-const tag = require('./tag');
-const post = require('./post');
+const inventory = require('./inventory');
 
 module.exports = {
 	category,
-	tag,
-	post,
+	supplier,
+	inventory,
 };
